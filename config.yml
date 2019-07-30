@@ -1,4 +1,3 @@
 name: Aditya Jagani
-logo: "/images/me.jpg?raw=true"
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
