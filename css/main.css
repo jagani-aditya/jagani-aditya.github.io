@@ -1,17 +1,4 @@
-body {
-  height: 100%;
-}
-
-.bg { 
-  background-image: url("/images/back.jpg");
-
-  height: 100%; 
-
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+body { margin: 60px auto; width: 70%; }
 
 a { text-decoration: none; color: #000000; }
 a:hover { text-decoration: underline; }
