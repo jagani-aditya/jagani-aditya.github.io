@@ -1,16 +1,5 @@
 body { margin: 60px auto; width: 70%; }
 
-html {background-image: url(https://github.com/jagani-aditya/jagani-aditya.github.io/blob/master/images/rocket.jpg);
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    font-family: 'Exo 2', sans-serif;
-}
-
 a { text-decoration: none; color: #800000; }
 a:hover { text-decoration: underline; }
 
