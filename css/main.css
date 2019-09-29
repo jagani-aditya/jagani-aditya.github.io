@@ -14,13 +14,13 @@ main {background-image: url(../images/rocket.jpg);
 a { text-decoration: none; color: #000000; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #0000A0; }
+p, ul { font-size: 1.2em; line-height: 1.4em; color: #00FFFF; }
 
 h1, h2, h3, h4 { font-family: 'Exo 2', sans-serif; }
-h1 { font-size: 3em;  }
-h2 { font-size: 2.7em; }
-h3 { font-size: 2.3em; }
-h4 { font-size: 1.9em; }
+h1 { font-size: 2.7em;  }
+h2 { font-size: 2.3em; }
+h3 { font-size: 1.9em; }
+h4 { font-size: 1.5em; }
 
 nav ul, footer ul { font-size: 1em; font-family: 'Exo 2', 'sans-serif'; padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
