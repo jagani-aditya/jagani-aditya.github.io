@@ -1,6 +1,6 @@
 body { margin: 60px auto; width: 70%; }
 
-main {background-image: url(../images/rocket.jpg);
+html {background-image: url(https://github.com/jagani-aditya/jagani-aditya.github.io/blob/master/images/rocket.jpg);
     background-size: cover;
     align-items: center;
     display: flex;
@@ -11,10 +11,10 @@ main {background-image: url(../images/rocket.jpg);
     font-family: 'Exo 2', sans-serif;
 }
 
-a { text-decoration: none; color: #000000; }
+a { text-decoration: none; color: #800000; }
 a:hover { text-decoration: underline; }
 
-p, ul { font-size: 1.2em; line-height: 1.4em; color: #00FFFF; }
+p, ul { font-size: 1.5em; line-height: 1.4em; color: #00FFFF; }
 
 h1, h2, h3, h4 { font-family: 'Exo 2', sans-serif; }
 h1 { font-size: 2.7em;  }
