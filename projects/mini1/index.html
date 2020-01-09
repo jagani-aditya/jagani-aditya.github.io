@@ -5,16 +5,13 @@ title: Autonomously Navigating a Mobile Robot using Sliding Control
 
 <h3> <center> Autonomously Navigating a Mobile Robot using Sliding Control </h3></center>
 
-<p>I took up an online course on Coursera named 'Control of Mobile Robots,' wherein I implemented a sliding control technique to navigate a differential drive robot to its goal location. The robot was autonomously able to reach its goal location by successfully navigating through convex obstacles using its robust controller. 
-
-The Finite State Machine (FSM) contained the following states:
-
-•	go_to_goal: The Controller calculated the distance and direction from its position to the goal position in the world frame in real-time using the vectors.   
-•	avoid_obstacle: The Controller calculates a resultant vector in the robot's frame by adding the vector pointing towards the obstacle and another vector, which is the same in magnitude and opposite in direction to that of the barrier. 
-•	ao_and_gtg: The Controller blends avoid_obstacles with go_to_goal behavior by a weighting technique that places specific importance on each of the controllers.
-•	follow_wall: The Controller maintains a set distance to a wall and follows through the edges.
-  
-</p>
+<p>I took up an online course on Coursera named 'Control of Mobile Robots,' wherein I implemented a sliding control technique to navigate a differential drive robot to its goal location. 
+ The robot was autonomously able to reach its goal location by successfully navigating through convex obstacles using its robust controller. 
+The Finite State Machine (FSM) contained the following states: </p>
+<p>1. go_to_goal: The Controller calculated the distance and direction from its position to the goal position in the world frame in real-time using the vectors.</p>   
+<p>2. avoid_obstacle: The Controller calculates a resultant vector in the robot's frame by adding the vector pointing towards the obstacle and another vector, which is the same in magnitude and opposite in direction to that of the barrier.</p> 
+<p>3. ao_and_gtg: The Controller blends avoid_obstacles with go_to_goal behavior by a weighting technique that places specific importance on each of the controllers.</p>
+<p>4. follow_wall: The Controller maintains a set distance to a wall and follows through the edges.</p>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
