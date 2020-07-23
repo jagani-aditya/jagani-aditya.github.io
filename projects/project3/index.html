@@ -9,6 +9,37 @@ title: Ball Balancing Bot
 a box from a moving conveyor belt to a storage bin situated on the other end of the factory via robots. Check out the simulation video below!!</p>
 <center><a href="https://youtu.be/kBU4plImcWc" target="_blank"><img src="http://img.youtube.com/vi/kBU4plImcWc/0.jpg" width="600" height="450" alt="IMAGE ALT TEXT HERE" border="1" style="float:center;" /></a></center>
 
-<p>The below image is of the State Machine which consists of several states that perform a particular task<br> they are listed as following:-</p>
 <p style="text-align:center;"><img src="/images/state_machine.png" alt="1" class="center" style="width:80% height="100%"">
+<p>The above image is of the State Machine which consists of several states that each perform a particular task in appropriate order, and they are listed as following:-
+<br> > Move R1 Home
+<br> > Move R2 to Home pose
+<br> > Start Conveyor Belt
+<br> > Start feeder
+<br> > Wait for Part
+<br> > Stop feeder
+<br> > Stop Conveyor Belt
+<br> > Detect Part Camera
+<br> > Compute pick 
+<br> > Activate Gripper 1
+<br> > Move R1 to pick
+<br> > Move R1 back Home
+<br> > Navigate to robot1 
+<br> > LocateTurtlebot
+<br> > Compute place Turtlebot 
+<br> > Move R1 to place
+<br> > Deactivate Gripper1 
+<br> > Move R1 back to Home
+<br> > Navigate to R2 
+<br> > Detect camera part
+<br> > LocateTurtlebot_2
+<br> > Compute pick R2 from Turtlebot
+<br> > Activate Gripper2 
+<br> > Move R2 to Pick
+<br> > Move R2 to Home_2 
+<br> > R2 Place
+<br> > Deactivate Gripper2 
+<br> > Move R2 to Home
+<br> > Finished  
 
+
+</p>
