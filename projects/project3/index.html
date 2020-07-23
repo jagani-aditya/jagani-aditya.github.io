@@ -11,35 +11,36 @@ a box from a moving conveyor belt to a storage bin situated on the other end of 
 
 <p style="text-align:center;"><img src="/images/state_machine.png" alt="1" class="center" style="width:60% height="50%"">
 <p>The above image is of the State Machine which consists of several states that each perform a particular task in appropriate order, and they are listed as following:-
-<br> > Move R1 Home
-<br> > Move R2 to Home pose
-<br> > Start Conveyor Belt
-<br> > Start feeder
-<br> > Wait for Part
-<br> > Stop feeder
-<br> > Stop Conveyor Belt
-<br> > Detect Part Camera
-<br> > Compute pick 
-<br> > Activate Gripper 1
-<br> > Move R1 to pick
-<br> > Move R1 back Home
-<br> > Navigate to robot1 
-<br> > LocateTurtlebot
-<br> > Compute place Turtlebot 
-<br> > Move R1 to place
-<br> > Deactivate Gripper1 
-<br> > Move R1 back to Home
-<br> > Navigate to R2 
-<br> > Detect camera part
-<br> > LocateTurtlebot_2
-<br> > Compute pick R2 from Turtlebot
-<br> > Activate Gripper2 
-<br> > Move R2 to Pick
-<br> > Move R2 to Home_2 
-<br> > R2 Place
-<br> > Deactivate Gripper2 
-<br> > Move R2 to Home
-<br> > Finished  
+<br>
+<br> > Move R1 Home - Computes path for Industrial Robot 1 to a pre-configured position: Home
+<br> > Move R2 to Home pose - Computes path for Industrial Robot 2 to a pre-configured position: Home
+<br> > Start Conveyor Belt - Starts the conveyor belt at a particular speed
+<br> > Start feeder - Feeds boxes on conveyor belt
+<br> > Wait for Part - The camera on conveyor belt detects whether a line is crossed by any part
+<br> > Stop feeder - When the part reaches that line, the feeder stops
+<br> > Stop Conveyor Belt - When part reaches that line, Conveyor belt stops too
+<br> > Detect Part Camera - The camera on detects the pose and position of the part
+<br> > Compute pick - Robot 1 obtains the position of the part and plans its motion using RRTConnect
+<br> > Activate Gripper 1 - Activates the gripper on the end-effector
+<br> > Move R1 to pick - Performs trajectory as computed in 'Compute pick'
+<br> > Move R1 back Home - At this point, the part is picked, and moves back to Home configuration
+<br> > Navigate to robot1 - Robot 1 stays in Home config, while the turtlebot moves to a pre-defined position and pose near Robot 1
+<br> > LocateTurtlebot - Once Turtlebot reaches near Robot 1, the position information is sent to Robot 1  
+<br> > Compute place Turtlebot - Plans motion to a pre-configured 'Place' position to drop the the box right above the turtlebot  
+<br> > Move R1 to place - Executes trajectory to 'Place'
+<br> > Deactivate Gripper1 - Deactivates the suction on end-effector of Robot 1
+<br> > Move R1 back to Home - Robot 1 moves back to 'Home' config
+<br> > Navigate to R2 - Turtlebot travels to pre-defined position near Robot 2 while navigating autonomously and using the factory map obtained by GMapping
+<br> > Detect camera part - The camera on top of Robot 2 detects the part position and pose
+<br> > LocateTurtlebot_2 - The position of Turtlebot is published to Robot 2
+<br> > Compute pick R2 from Turtlebot - Robot 2 plans motion to pick the part
+<br> > Activate Gripper2 - Activates the suction on end-effector of Robot 2
+<br> > Move R2 to Pick - Robot 2 executes the trajectory computed in 'Compute pick R2 from Turtlebot'
+<br> > Move R2 to Home_2 - Once Robot 2 pick the part, it goes to pre-configured position 'Home'
+<br> > R2 Place - Moves Robot 2 to pre-configured position 'Place' which is right above the storage bin
+<br> > Deactivate Gripper2 - Drops the box in the bin
+<br> > Move R2 to Home - Robot 2 moves to 'Home' position
+<br> > Finished - State Machine reaches its ultimate goal and the behavorial engine has successfully completed its purpose 
 
 
 </p>
